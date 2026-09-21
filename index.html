@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quote My Anything — Get 3 Quotes Fast</title>
+  <meta name="description" content="One request. Multiple quotes. Travel, home, auto, wellness — Quote My Anything matches you with real providers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html">QMA</a>
+    <nav>
+      <a href="travel.html">Travel</a>
+      <a href="home.html">Home</a>
+      <a href="auto.html">Auto</a>
+      <a href="wellness.html">Wellness</a>
+      <a class="btn btn-sm" href="#quote">Get quotes</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <p class="eyebrow">Quote My Anything</p>
+    <h1>Stop hunting. Start comparing.</h1>
+    <p class="lede">Tell us what you need. We route it to the right local and specialist partners — travel, home projects, cars, and wellness — and you get real quotes back.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#quote">Request quotes</a>
+      <a class="btn btn-ghost" href="#built">See what we already built</a>
+    </div>
+    <ul class="trust">
+      <li>No spam calls from random lists</li>
+      <li>You choose who to talk to</li>
+      <li>Built for real jobs, trips, and treatments</li>
+    </ul>
+  </section>
+  <section id="built" class="grid-section">
+    <h2>Live properties we already ship</h2>
+    <p class="section-copy">These are not mockups. They are live QMA verticals. Each one has its own lead page so ads and partners can send traffic to the right offer.</p>
+    <div class="cards">
+      <a class="card" href="travel.html">
+        <span class="tag">Travel</span>
+        <h3>Trip + cruise quotes</h3>
+        <p>Advisor-style intake for destinations, dates, cabin, and budget. Routes to QMA travel / Captain stack.</p>
+      </a>
+      <a class="card" href="home.html">
+        <span class="tag">Home</span>
+        <h3>Home projects</h3>
+        <p>Roof, HVAC, remodel, yard — service cards that convert homeowners into quote requests.</p>
+      </a>
+      <a class="card" href="auto.html">
+        <span class="tag">Auto</span>
+        <h3>Cars &amp; financing</h3>
+        <p>Lead page for MagnaCars-style inventory and “what can I afford” quote flows.</p>
+      </a>
+      <a class="card" href="wellness.html">
+        <span class="tag">Wellness</span>
+        <h3>Med spa &amp; self-care</h3>
+        <p>Treatment interest + consult booking for Larkspur / Salena style properties.</p>
+      </a>
+    </div>
+  </section>
+  <section id="quote" class="form-section">
+    <div>
+      <h2>Tell us what you want quoted</h2>
+      <p>One form. We tag the vertical and send you to the right follow-up page.</p>
+    </div>
+    <form class="lead-form" action="thank-you.html" method="get">
+      <label>Name
+        <input name="name" required placeholder="Your name" />
+      </label>
+      <label>Email
+        <input type="email" name="email" required placeholder="you@email.com" />
+      </label>
+      <label>Phone
+        <input type="tel" name="phone" placeholder="Optional" />
+      </label>
+      <label>What do you need?
+        <select name="vertical" required>
+          <option value="">Choose a category</option>
+          <option value="travel">Travel / cruise / trip</option>
+          <option value="home">Home project or repair</option>
+          <option value="auto">Car, trade-in, or financing</option>
+          <option value="wellness">Med spa / wellness</option>
+          <option value="other">Something else</option>
+        </select>
+      </label>
+      <label>Details
+        <textarea name="details" rows="4" placeholder="City, dates, budget, what you want done…"></textarea>
+      </label>
+      <button class="btn" type="submit">Get my quotes</button>
+      <p class="fine">By submitting you agree we may share this request with matching partners. No obligation.</p>
+    </form>
+  </section>
+  <footer>
+    <p>Quote My Anything · Lead pages for properties already built</p>
+    <p><a href="travel.html">Travel</a> · <a href="home.html">Home</a> · <a href="auto.html">Auto</a> · <a href="wellness.html">Wellness</a></p>
+  </footer>
+</body>
+</html>

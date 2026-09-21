@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auto quotes — Quote My Anything</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html">QMA</a>
+    <nav>
+      <a href="index.html">All verticals</a>
+      <a class="btn btn-sm" href="#quote">Get auto quotes</a>
+    </nav>
+  </header>
+  <section class="split">
+    <div>
+      <p class="eyebrow">Auto / MagnaCars stack</p>
+      <h1>Price the car before you walk the lot.</h1>
+      <p class="lede">Lead page for inventory interest, trade-in, and payment quotes. Built to sit in front of the MagnaCars property.</p>
+    </div>
+    <form id="quote" class="lead-form panel" action="thank-you.html" method="get">
+      <input type="hidden" name="vertical" value="auto" />
+      <label>Name <input name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Phone <input type="tel" name="phone"></label>
+      <label>Looking for <input name="vehicle" placeholder="SUV, truck, specific model"></label>
+      <label>Monthly target
+        <select name="payment">
+          <option>Under $400</option>
+          <option>$400–600</option>
+          <option>$600–900</option>
+          <option>Cash / other</option>
+        </select>
+      </label>
+      <label>Trade-in?
+        <select name="trade">
+          <option>No</option>
+          <option>Yes — need an estimate</option>
+        </select>
+      </label>
+      <button class="btn" type="submit">Get auto quotes</button>
+    </form>
+  </section>
+  <footer><p><a href="index.html">← All QMA lead pages</a></p></footer>
+</body>
+</html>

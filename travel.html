@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Travel quotes — Quote My Anything</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html">QMA</a>
+    <nav>
+      <a href="index.html">All verticals</a>
+      <a class="btn btn-sm" href="#quote">Plan this trip</a>
+    </nav>
+  </header>
+  <section class="split">
+    <div>
+      <p class="eyebrow">Travel / cruise / advisor</p>
+      <h1>Get trip quotes without 40 browser tabs.</h1>
+      <p class="lede">Built on the QMA travel + Captain stack. Share dates, destination, and vibe. We match you with advisors who can actually price the itinerary.</p>
+    </div>
+    <form id="quote" class="lead-form panel" action="thank-you.html" method="get">
+      <input type="hidden" name="vertical" value="travel" />
+      <label>Name <input name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Phone <input type="tel" name="phone"></label>
+      <label>Destination / ship <input name="destination" placeholder="Caribbean, Alaska, Italy…"></label>
+      <label>Travel month <input name="when" placeholder="e.g. March 2027"></label>
+      <label>Travelers <input name="party" placeholder="2 adults"></label>
+      <label>Budget range
+        <select name="budget">
+          <option>Under $3k</option>
+          <option>3–6k</option>
+          <option>6–12k</option>
+          <option>12k+</option>
+        </select>
+      </label>
+      <button class="btn" type="submit">Get travel quotes</button>
+    </form>
+  </section>
+  <footer><p><a href="index.html">← All QMA lead pages</a></p></footer>
+</body>
+</html>
