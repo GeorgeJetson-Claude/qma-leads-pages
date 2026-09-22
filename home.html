@@ -10,18 +10,16 @@
 <body>
   <header class="nav">
     <a class="logo" href="index.html">QMA</a>
-    <nav>
-      <a href="index.html">All verticals</a>
-      <a class="btn btn-sm" href="#quote">Get home quotes</a>
-    </nav>
+    <nav><a href="index.html">All verticals</a><a class="btn btn-sm" href="#quote">Get home quotes</a></nav>
   </header>
   <section class="split">
     <div>
-      <p class="eyebrow">Home services</p>
+      <p class="eyebrow">Home services · already built</p>
       <h1>One request. Multiple local quotes.</h1>
-      <p class="lede">This page sits on top of the QMA home-fix category cards — roof, HVAC, remodel, exterior, yard.</p>
+      <p class="lede">Sits on top of the QMA home-fix and city pages — HVAC, kitchen, bath, fence, yard, plumbing, pest, pool.</p>
     </div>
-    <form id="quote" class="lead-form panel" action="thank-you.html" method="get">
+    <form id="quote" class="lead-form panel" action="https://formspree.io/f/xdajvlvr" method="POST">
+      <input type="hidden" name="_next" value="thank-you.html" />
       <input type="hidden" name="vertical" value="home" />
       <label>Name <input name="name" required></label>
       <label>Email <input type="email" name="email" required></label>
@@ -29,11 +27,11 @@
       <label>ZIP / city <input name="zip" required placeholder="78701"></label>
       <label>Job type
         <select name="job">
-          <option>Roof / exterior</option>
           <option>HVAC</option>
           <option>Kitchen / bath</option>
-          <option>Yard / fence</option>
-          <option>Other</option>
+          <option>Plumbing / electrical</option>
+          <option>Yard / fence / deck</option>
+          <option>Pest / pool / other</option>
         </select>
       </label>
       <label>What needs to happen? <textarea name="details" rows="4"></textarea></label>

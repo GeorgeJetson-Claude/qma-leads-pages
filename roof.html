@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Texas roof quotes — Quote My Anything</title>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html">QMA</a>
+    <nav><a href="index.html">All verticals</a><a class="btn btn-sm" href="#quote">Get roof quotes</a></nav>
+  </header>
+  <section class="split">
+    <div>
+      <p class="eyebrow">Austin Roofs + city pages</p>
+      <h1>Free roof quotes. No pressure.</h1>
+      <p class="lede">Built for the Austin Roofs property and the Texas city roofing pages already live on Quote My Anything.</p>
+    </div>
+    <form id="quote" class="lead-form panel" action="https://formspree.io/f/xdajvlvr" method="POST">
+      <input type="hidden" name="_next" value="thank-you.html" />
+      <input type="hidden" name="vertical" value="roof" />
+      <label>Name <input name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Phone <input type="tel" name="phone" required></label>
+      <label>ZIP / city <input name="zip" required placeholder="Austin 78704"></label>
+      <label>What do you need?
+        <select name="job">
+          <option>Full replacement</option>
+          <option>Repair / leak</option>
+          <option>Storm / insurance</option>
+          <option>Inspection only</option>
+        </select>
+      </label>
+      <label>Notes <textarea name="details" rows="3" placeholder="Age of roof, leak location…"></textarea></label>
+      <button class="btn" type="submit">Get my roof quotes</button>
+    </form>
+  </section>
+  <footer><p><a href="index.html">← All QMA lead pages</a></p></footer>
+</body>
+</html>
