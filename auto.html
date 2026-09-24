@@ -3,40 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Car quotes — Quote My Anything</title>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <title>Car & financing quotes | Quote My Anything</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="index.html">QMA</a>
-    <nav><a href="index.html">All verticals</a><a class="btn btn-sm" href="#quote">Get car quotes</a></nav>
-  </header>
+  <header class="nav"><a class="logo" href="index.html">QMA</a><nav><a class="btn btn-sm" href="#quote">Get quotes</a></nav></header>
   <section class="split">
     <div>
-      <p class="eyebrow">MagnaCars + car AI guide</p>
-      <h1>What can I actually afford?</h1>
-      <p class="lede">Lead page for the car inventory / financing properties already built. Trade-in, payment target, or a specific vehicle.</p>
+      <p class="eyebrow">MagnaCars + auto AI</p>
+      <h1>What can you afford — and what is the car worth?</h1>
+      <p class="lede">Trade-in, buy, or finance. Routed through MagnaCars.</p>
     </div>
     <form id="quote" class="lead-form panel" action="https://formspree.io/f/xdajvlvr" method="POST">
-      <input type="hidden" name="_next" value="thank-you.html" />
-      <input type="hidden" name="vertical" value="auto" />
-      <label>Name <input name="name" required></label>
-      <label>Email <input type="email" name="email" required></label>
-      <label>Phone <input type="tel" name="phone"></label>
-      <label>ZIP <input name="zip" required></label>
-      <label>I want
-        <select name="job">
-          <option>Payment estimate</option>
-          <option>Specific car quote</option>
-          <option>Trade-in value</option>
-          <option>Both buy + trade</option>
-        </select>
-      </label>
-      <label>Details <textarea name="details" rows="4" placeholder="Make/model, monthly target, trade year…"></textarea></label>
-      <button class="btn" type="submit">Get my car quotes</button>
+      <input type="hidden" name="_next" value="thank-you.html" /><input type="hidden" name="source" value="qma-auto" />
+      <h2>Request quotes</h2>
+      <label>Name <input name="name" required /></label>
+      <label>Email <input type="email" name="email" required /></label>
+      <label>Phone <input type="tel" name="phone" /></label>
+      <label>ZIP / city <input name="zip" required /></label>
+      <label>Looking to <select name="intent"><option>Buy</option><option>Sell / trade-in</option><option>Finance only</option></select></label>
+      <label>Vehicle <input name="vehicle" /></label>
+      <label>Details <textarea name="details" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Get my quotes</button>
     </form>
   </section>
-  <footer><p><a href="index.html">← All QMA lead pages</a></p></footer>
-</body>
-</html>
+</body></html>

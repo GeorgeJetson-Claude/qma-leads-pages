@@ -3,39 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Travel &amp; cruise quotes — Quote My Anything</title>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <title>Travel & cruise quotes | Quote My Anything</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="index.html">QMA</a>
-    <nav><a href="index.html">All verticals</a><a class="btn btn-sm" href="#quote">Get trip quotes</a></nav>
-  </header>
+  <header class="nav"><a class="logo" href="index.html">QMA</a><nav><a class="btn btn-sm" href="#quote">Get quotes</a></nav></header>
   <section class="split">
     <div>
-      <p class="eyebrow">Travel · already built</p>
-      <h1>Tell us the trip. Get real quotes.</h1>
-      <p class="lede">Feeds the QMA travel advisor and Captain stack — cruises, family trips, dates and cabin type.</p>
-      <div class="proof">
-        <p>Works for cruises, flights + hotel, and multi-city itineraries.</p>
-        <p>You stay in control of who you book with.</p>
-      </div>
+      <p class="eyebrow">Travel advisor stack</p>
+      <h1>Get trip and cruise quotes without 40 tabs.</h1>
+      <p class="lede">Dates, destination, budget. Routed through the QMA travel advisor and cruise-deck sites already live.</p>
+      <ul class="trust"><li>Cruises, flights, multi-city trips</li><li>Budget ranges welcome</li><li>You pick who to book with</li></ul>
     </div>
     <form id="quote" class="lead-form panel" action="https://formspree.io/f/xdajvlvr" method="POST">
-      <input type="hidden" name="_next" value="thank-you.html" />
-      <input type="hidden" name="vertical" value="travel" />
-      <label>Name <input name="name" required></label>
-      <label>Email <input type="email" name="email" required></label>
-      <label>Phone <input type="tel" name="phone"></label>
-      <label>Where / what kind of trip <input name="destination" required placeholder="Caribbean cruise, Italy, Austin weekend…"></label>
-      <label>Travel dates <input name="dates" placeholder="Month or exact dates"></label>
-      <label>Travelers <input name="travelers" placeholder="2 adults, 1 kid"></label>
-      <label>Budget <input name="budget" placeholder="Per person or total"></label>
-      <label>Notes <textarea name="details" rows="3"></textarea></label>
-      <button class="btn" type="submit">Get my trip quotes</button>
+      <input type="hidden" name="_next" value="thank-you.html" /><input type="hidden" name="source" value="qma-travel" />
+      <h2>Request quotes</h2>
+      <label>Name <input name="name" required /></label>
+      <label>Email <input type="email" name="email" required /></label>
+      <label>Phone <input type="tel" name="phone" /></label>
+      <label>ZIP / city <input name="zip" required /></label>
+      <label>Destination <input name="destination" /></label>
+      <label>Travel dates <input name="dates" /></label>
+      <label>Details <textarea name="details" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Get my quotes</button>
     </form>
   </section>
-  <footer><p><a href="index.html">← All QMA lead pages</a></p></footer>
-</body>
-</html>
+</body></html>
