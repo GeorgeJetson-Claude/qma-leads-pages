@@ -1,16 +1,8 @@
-# QMA Lead Pages
+# QMA lead pages
 
-Lead-capture funnel for Quote My Anything properties already built.
+Conversion pages for Quote My Anything properties already built.
 
-## Pages
-- index.html — hub / any-quote form
-- travel.html — trips, cruises, Captain stack
-- home.html — home-fix / QMA city quote pages
-- roof.html — Austin Roofs + Texas roofing pages
-- auto.html — MagnaCars / car-AI guide
-- wellness.html — Larkspur / Salena med spa
-- collect.html — Pokémon / retro / VHS quotes
-- flip.html — ThriftFlip Hub resale quotes
-- thank-you.html
+Live project: qma-leads-funnel (Vercel) → repo qma-leads-pages
 
-Forms POST to Formspree `xdajvlvr` then redirect to thank-you.html.
+Verticals: travel, home, roof, auto, wellness, collect, flip, business.
+Forms post to Formspree and land on thank-you.html.
