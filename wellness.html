@@ -3,40 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wellness &amp; med spa quotes — Quote My Anything</title>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <title>Med spa consult quotes | Quote My Anything</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="index.html">QMA</a>
-    <nav><a href="index.html">All verticals</a><a class="btn btn-sm" href="#quote">Book a consult</a></nav>
-  </header>
+  <header class="nav"><a class="logo" href="index.html">QMA</a><nav><a class="btn btn-sm" href="#quote">Get quotes</a></nav></header>
   <section class="split">
     <div>
-      <p class="eyebrow">Larkspur · Salena</p>
-      <h1>Request a consult, not a hard sell.</h1>
-      <p class="lede">Treatment interest for the med spa properties already live. You pick the treatment; we route the lead.</p>
+      <p class="eyebrow">Larkspur / Salena</p>
+      <h1>Book a consult, not a hard sell.</h1>
+      <p class="lede">Facials, injectables, body — request pricing through the Larkspur Med Spa and Salena sites.</p>
     </div>
     <form id="quote" class="lead-form panel" action="https://formspree.io/f/xdajvlvr" method="POST">
-      <input type="hidden" name="_next" value="thank-you.html" />
-      <input type="hidden" name="vertical" value="wellness" />
-      <label>Name <input name="name" required></label>
-      <label>Email <input type="email" name="email" required></label>
-      <label>Phone <input type="tel" name="phone"></label>
-      <label>City <input name="zip" placeholder="Austin"></label>
-      <label>Interest
-        <select name="job">
-          <option>Facial / skin</option>
-          <option>Injectables</option>
-          <option>Body / wellness</option>
-          <option>Not sure — consult</option>
-        </select>
-      </label>
-      <label>Notes <textarea name="details" rows="3"></textarea></label>
-      <button class="btn" type="submit">Request my consult</button>
+      <input type="hidden" name="_next" value="thank-you.html" /><input type="hidden" name="source" value="qma-wellness" />
+      <h2>Request quotes</h2>
+      <label>Name <input name="name" required /></label>
+      <label>Email <input type="email" name="email" required /></label>
+      <label>Phone <input type="tel" name="phone" /></label>
+      <label>ZIP / city <input name="zip" required /></label>
+      <label>Interest <select name="treatment"><option>Facial / skin</option><option>Injectables</option><option>Body</option><option>Not sure — consult</option></select></label>
+      <label>Details <textarea name="details" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Get my quotes</button>
     </form>
   </section>
-  <footer><p><a href="index.html">← All QMA lead pages</a></p></footer>
-</body>
-</html>
+</body></html>

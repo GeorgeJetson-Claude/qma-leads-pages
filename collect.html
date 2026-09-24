@@ -3,38 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Collectible quotes — Quote My Anything</title>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <title>Collectibles quotes | Quote My Anything</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="nav">
-    <a class="logo" href="index.html">QMA</a>
-    <nav><a href="index.html">All verticals</a><a class="btn btn-sm" href="#quote">Get a price</a></nav>
-  </header>
+  <header class="nav"><a class="logo" href="index.html">QMA</a><nav><a class="btn btn-sm" href="#quote">Get quotes</a></nav></header>
   <section class="split">
     <div>
-      <p class="eyebrow">Pokémon · retro · VHS</p>
-      <h1>Get a quote on cards, games, tapes.</h1>
-      <p class="lede">Feeds the kid-friendly Pokémon / retro / VHS / DVD / CD quote property already built.</p>
+      <p class="eyebrow">Cards · games · VHS</p>
+      <h1>Get a number on the collection before you sell.</h1>
+      <p class="lede">Pokémon, sports cards, retro games, VHS lots.</p>
     </div>
     <form id="quote" class="lead-form panel" action="https://formspree.io/f/xdajvlvr" method="POST">
-      <input type="hidden" name="_next" value="thank-you.html" />
-      <input type="hidden" name="vertical" value="collect" />
-      <label>Name <input name="name" required></label>
-      <label>Email <input type="email" name="email" required></label>
-      <label>I have
-        <select name="job">
-          <option>Pokémon / trading cards</option>
-          <option>Retro games</option>
-          <option>VHS / DVD / CD / tapes</option>
-          <option>Mixed lot</option>
-        </select>
-      </label>
-      <label>What is it? <textarea name="details" rows="4" placeholder="Set, condition, quantity…"></textarea></label>
-      <button class="btn" type="submit">Get my collectible quote</button>
+      <input type="hidden" name="_next" value="thank-you.html" /><input type="hidden" name="source" value="qma-collect" />
+      <h2>Request quotes</h2>
+      <label>Name <input name="name" required /></label>
+      <label>Email <input type="email" name="email" required /></label>
+      <label>Phone <input type="tel" name="phone" /></label>
+      <label>ZIP / city <input name="zip" required /></label>
+      <label>Category <select name="category"><option>Trading cards</option><option>Video games</option><option>VHS / media</option><option>Mixed lot</option></select></label>
+      <label>Details <textarea name="details" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Get my quotes</button>
     </form>
   </section>
-  <footer><p><a href="index.html">← All QMA lead pages</a></p></footer>
-</body>
-</html>
+</body></html>
