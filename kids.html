@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kids cards & games quotes | Quote My Anything</title>
+  <meta name="description" content="Pokémon, retro games, VHS lots — quote the collection." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="index.html">QMA</a>
+    <nav>
+      <a href="collect.html">Collect</a>
+      <a class="btn btn-sm" href="#quote">Get a quote</a>
+    </nav>
+  </header>
+  <section class="split">
+    <div>
+      <p class="eyebrow">Kids / retro</p>
+      <h1>Quote the binder, not the whole internet.</h1>
+      <p class="lede">Pokémon, retro games, VHS, tapes. Built on the kid-friendly collectibles side we already shipped.</p>
+      <ul class="trust"><li>Lot or single</li><li>Photos welcome in follow-up</li><li>Fair offer path</li></ul>
+    </div>
+    <form id="quote" class="lead-form panel" action="https://formspree.io/f/xdajvlvr" method="POST">
+      <input type="hidden" name="_next" value="thank-you.html" />
+      <input type="hidden" name="source" value="qma-kids-collect" />
+      <h2>Get a collection quote</h2>
+      <label>Name <input name="name" required /></label>
+      <label>Email <input type="email" name="email" required /></label>
+      <label>ZIP <input name="zip" required /></label>
+      <label>What is it? <select name="need"><option>Pokémon / cards</option><option>Retro games</option><option>VHS / DVD / tapes</option><option>Mixed lot</option></select></label>
+      <label>Details <textarea name="details" rows="4" required placeholder="How many, condition, brands…"></textarea></label>
+      <button class="btn" type="submit">Get my quote</button>
+    </form>
+  </section>
+  <footer><p><a href="index.html">All QMA lead pages</a></p></footer>
+</body>
+</html>
