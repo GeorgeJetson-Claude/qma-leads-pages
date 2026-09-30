@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Austin quotes | Quote My Anything</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="nav"><a class="logo" href="index.html">QMA</a><nav><a href="dallas.html">Dallas</a><a href="houston.html">Houston</a><a class="btn btn-sm" href="#quote">Get quotes</a></nav></header>
+  <section class="split">
+    <div>
+      <p class="eyebrow">Austin · 787xx</p>
+      <h1>Local Austin quotes without blasting every contractor in Travis County.</h1>
+      <p class="lede">Feeds the austin-quotes page already live on QMA. Roof, HVAC, yard, remodel, or something else.</p>
+    </div>
+    <form id="quote" class="lead-form panel" action="https://formspree.io/f/xdajvlvr" method="POST">
+      <input type="hidden" name="_next" value="thank-you.html" />
+      <input type="hidden" name="source" value="qma-austin" />
+      <input type="hidden" name="vertical" value="austin" />
+      <h2>Austin request</h2>
+      <label>Name <input name="name" required /></label>
+      <label>Email <input type="email" name="email" required /></label>
+      <label>Phone <input type="tel" name="phone" /></label>
+      <label>ZIP <input name="zip" required placeholder="78704" /></label>
+      <label>Need
+        <select name="project">
+          <option>Roof</option>
+          <option>HVAC</option>
+          <option>Electrical</option>
+          <option>Yard</option>
+          <option>Cleaning</option>
+          <option>Other home job</option>
+        </select>
+      </label>
+      <label>Details <textarea name="details" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Get Austin quotes</button>
+    </form>
+  </section>
+</body></html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>House cleaning quotes | Quote My Anything</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="nav"><a class="logo" href="index.html">QMA</a><nav><a href="home.html">Home</a><a class="btn btn-sm" href="#quote">Get quotes</a></nav></header>
+  <section class="split">
+    <div>
+      <p class="eyebrow">Home · Cleaning</p>
+      <h1>One-time deep clean or recurring crew. Get prices first.</h1>
+      <p class="lede">Routed through the house-cleaning page already on Quote My Anything.</p>
+    </div>
+    <form id="quote" class="lead-form panel" action="https://formspree.io/f/xdajvlvr" method="POST">
+      <input type="hidden" name="_next" value="thank-you.html" />
+      <input type="hidden" name="source" value="qma-cleaning" />
+      <input type="hidden" name="vertical" value="cleaning" />
+      <h2>Request cleaning quotes</h2>
+      <label>Name <input name="name" required /></label>
+      <label>Email <input type="email" name="email" required /></label>
+      <label>Phone <input type="tel" name="phone" /></label>
+      <label>ZIP / city <input name="zip" required /></label>
+      <label>Type
+        <select name="project">
+          <option>One-time deep clean</option>
+          <option>Move-in / move-out</option>
+          <option>Weekly</option>
+          <option>Biweekly</option>
+          <option>Monthly</option>
+        </select>
+      </label>
+      <label>Beds / baths / notes <textarea name="details" rows="4" required></textarea></label>
+      <button class="btn" type="submit">Get my quotes</button>
+    </form>
+  </section>
+</body></html>
