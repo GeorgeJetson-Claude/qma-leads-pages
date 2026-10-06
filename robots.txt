@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://qma-leads-pages.vercel.app/sitemap.xml
